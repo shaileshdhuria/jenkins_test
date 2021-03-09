@@ -27,7 +27,7 @@ pipeline {
 
 stage("build & SonarQube analysis") {
                     steps {
-                 withSonarQubeEnv('Jenkins-testing') {
+                 withSonarQubeEnv('jenkins-testing') {
     sh "mvn compile test install sonar:sonar"
                         }
             }
